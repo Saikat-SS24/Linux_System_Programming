@@ -12,8 +12,7 @@ project built at the end of the program.
 ├── Assignments/   # Daily take-home assignments (Day01 – Day43)
 ├── Classwork/     # In-class exercises, demos, and mini-projects
 ├── Materials/     # Reference PDFs, slide decks, and guides shared by instructors
-├── 24May26_SYS_CPPLinuxSysProg_CapStone_4026593-ECSBF/   # Capstone project
-└── unixhistory.txt
+├── CapStoneProject/   # Capstone project
 ```
 
 ### Assignments/
