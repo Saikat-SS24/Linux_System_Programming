@@ -1,0 +1,3 @@
+Line 1: Hello from C++ File I/O!
+Line 2: This file was created dynamically.
+Line 3: Closing the file now.

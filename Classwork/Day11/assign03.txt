@@ -1,0 +1,21 @@
+1) The basic salary is entered. House rent allowance is 40 % of basic salary & dearness
+allowance is 20% of basic salary. write a program to calculate the gross salary.
+
+2) The selling price & profit are entered. Write a program to calculate cost price of item.
+
+3) Write a program to calculate area of circle taking input the radius of the circle
+
+4) Write a program to swap two numbers without using third variable and without using functions or pointers.
+
+5) If the marks obtained by a student in five different subjects are input through the keyboard, find
+out the aggregate marks and percentage marks obtained by the student. Assume that the maximum
+marks that can be obtained by a student in each subject are 100.
+
+6) If a Five digit number is input through the keyboard, write a program to calculate the sum of
+its digits.
+
+ex: i/p : 12345
+
+	o/p : sum = 15
+	
+	explaination: 1+2+3+4+5 = 15

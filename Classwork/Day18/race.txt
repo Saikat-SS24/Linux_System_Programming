@@ -1,0 +1,12 @@
+Deposit: Balance = 1100
+Deposit: Balance = 1200
+Deposit: Balance = 1300
+Deposit: Balance = 1400
+Deposit: Balance = 1500
+Withdraw: Balance = 1450
+Withdraw: Balance = 1400
+Withdraw: Balance = 1350
+Withdraw: Balance = 1300
+Withdraw: Balance = 1250
+
+Final Balance = 1250

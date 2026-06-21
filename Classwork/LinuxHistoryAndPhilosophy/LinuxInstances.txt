@@ -1,0 +1,5 @@
+The Linux operating system originated in 1991 when Linus Torvalds, a Finnish student, developed a free Unix-like 
+utilities and libraries but lacked a kernel. The combination of the Linux with a GNU tools formed the complelete
+GNU/Linux system.
+GNU/Linux is based on the principles of the free software, emphasizing users freedom to run, study, modify and 
+where contributions are accepted based on merit. This model has some GNU/Linux highly portable, stable and widely

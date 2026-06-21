@@ -1,0 +1,19 @@
+Exercise 1: Temperature Converter
+
+/* Write a program that converts between Fahrenheit and Celsius */
+
+Exercise 2: Number Guessing Game
+
+/* Implement a game where user guesses a random number */
+
+Exercise 3: Factorial Calculator
+
+/* Calculate factorial using loops */
+
+Exercise 4: Pattern Printer
+
+/* Print various patterns using nested loops */
+
+Exercise 5: Simple ATM
+
+/* Create an ATM simulation with menu and operations */

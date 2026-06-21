@@ -1,0 +1,89 @@
+sudo apt update
+sudo apt install -y docker.io qemu-system-x86
+
+Verify Docker:
+docker --version
+
+
+mkdir kernel-docker
+
+cd kernel-docker
+
+create Dockerfile 
+
+
+docker build -t kernel-builder .
+
+docker run -it --name kernel-dev-u13 -v $PWD:/kernel kernel-builder
+
+
+:/kernel# 
+
+wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
+tar -xf linux-6.6.tar.xz
+cd linux-6.6
+
+
+create rootfs dirctory and sub dir's using normal userid's
+
+mkdir rootfs
+
+mkdir bin dev etc proc sbin sys usr
+mkdir usr/bin usr/sbin
+
+
+create init file in rootfs dir
+
+cd rootfs
+vi init
+
+#!/bin/sh
+mount -t proc none /proc
+mount -t sysfs none /sys
+mount -t devtmpfs none /dev
+
+echo "BOOT OK"
+
+exec /bin/sh
+
+
+$chmod +x init
+
+
+dockerimage#cd linux-6.6
+dockerimage#make defconfig
+
+dockerimage#make -j$(nproc)
+
+
+$sudo apt install -y busybox-static
+$cp /bin/busybox rootfs/bin
+$ln -s busybox rootfs/bin/sh
+
+$cd rootfs/bin
+$ln -sf busybox mount
+$ln -sf busybox ls
+$ln -sf busybox dmesg
+$ln -sf busybox uname
+
+$sudo mknod -m 600 rootfs/dev/console c 5 1
+$sudo mknod -m 666 rootfs/dev/null c 1 3
+
+$cd rootfs
+rootfs$find . | cpio -H newC -ov > ../initramfs.cpio
+
+
+kernel-docker$qemu-system-x86_64 -m 512M -kernel linux-6.6/arch/x86/boot/bzImage -initrd initramfs.cpio -append "console=ttyS0 init=/init" -nographic
+
+
+
+
+
+
+
+
+
+
+
+
+

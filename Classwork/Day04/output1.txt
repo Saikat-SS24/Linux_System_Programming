@@ -1,0 +1,3 @@
+student@student:~/25SUB5936_U21/classwork/day04$ date +%D > output1.txt
+
+04/09/26

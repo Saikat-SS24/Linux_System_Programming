@@ -1,0 +1,6 @@
+[2026-05-23 18:55:34] [INFO   ] Node 'node_1' starting
+[2026-05-23 18:55:43] [INFO   ] 'node_1' sent a message
+[2026-05-23 18:55:43] [INFO   ] Received from 'node_1': Hello
+[2026-05-23 18:56:36] [INFO   ] Node 'node_1' starting
+[2026-05-23 18:56:41] [INFO   ] 'node_1' sent a message
+[2026-05-23 18:56:41] [INFO   ] Received from 'node_1': I am back

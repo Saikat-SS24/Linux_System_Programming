@@ -1,0 +1,7 @@
+[2026-05-23 17:51:08] [INFO   ] Node 'xyz' starting
+[2026-05-23 17:51:11] [INFO   ] 'xyz' sent a message
+[2026-05-23 17:51:11] [INFO   ] Received from 'xyz': hiiiii
+[2026-05-23 17:51:31] [INFO   ] Node 'xyz' starting
+[2026-05-23 17:51:35] [INFO   ] 'xyz' sent a message
+[2026-05-23 17:51:35] [INFO   ] Received from 'xyz': er
+[2026-05-23 17:52:27] [INFO   ] Received from 'abc': bhai

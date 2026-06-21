@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: calc-server
+spec:
+  replicas: 3   # THIS is the fix
+  selector:
+    matchLabels:
+      app: calc
+  template:
+    metadata:
+      labels:
+        app: calc
+    spec:
+      containers:
+      - name: calc
+        image: calc-server
+        ports:
+        - containerPort: 9090

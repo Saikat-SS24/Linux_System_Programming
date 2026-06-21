@@ -1,0 +1,35 @@
+Q1. 
+Using low level(posix) file operations, read from the user input
+10 employee records and write to the binary file.
+do the following operations
+1. search
+2. updated (employee records for a change in salary)
+3. display all records
+4. display on a particular employee records
+After the employee left the organization make his record visible
+to the admin only and not to any Manager
+
+
+
+req low file->add, update, search, read->i need to write the whole obj
+class Emp-> objEmp->write
+
+cat emp -> 1. reg emp, 2. Manager, 3. Admin, 4. Hr
+
+Manager -> his own rec -> update-> address, phno,
+        -> he can update bonus, rating of other emp in his team
+        -> projNo
+Admin/hr -> this is first person to login with admin/admin 
+
+emp->id(auto),name,sal, bonus, rating, level,address,phone,
+Activestatus (only Admin)
+
+
+class users-> by using details of emp empid(userid), passwd(empid)
+
+
+class Manager:emp
+class admin:emp
+
+login screen-> userid and passwd
+
